@@ -1,3 +1,9 @@
+/*
+*
+* 7.1-7.5 不忌口，但量以刚好吃饱为止（不吃早餐，中餐，晚餐正常）减脂慢。。
+* 7.6-7.12 去掉晚餐，不忌口，吃早餐，午餐 （量以刚好吃饱为止）
+*
+* */
 import {useEffect, useState} from "react";
 
 import * as echarts from 'echarts';
@@ -19,7 +25,7 @@ export default function HomePage() {
             xAxis.push(`${item.month}.${i < 10 ? '0' + i : i}`)
         }
     })
-    let [weight, setWeight] = useState<Array<number>>([151, 150, 150, 148.7, 148, 148.1])
+    let [weight, setWeight] = useState<Array<number>>([151, 150, 150, 148.7, 148, 148.1, 146.9])
     useEffect(() => {
         let chartDom = document.getElementById('main') as HTMLElement;
         let myChart = echarts.init(chartDom, 'dark');
