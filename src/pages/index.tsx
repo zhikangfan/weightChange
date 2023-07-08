@@ -25,7 +25,7 @@ export default function HomePage() {
             xAxis.push(`${item.month}.${i < 10 ? '0' + i : i}`)
         }
     })
-    let [weight, setWeight] = useState<Array<number>>([151, 150, 150, 148.7, 148, 148.1, 146.9])
+    let [weight, setWeight] = useState<Array<number>>([151, 150, 150, 148.7, 148, 148.1, 146.9, 146.7])
     useEffect(() => {
         let chartDom = document.getElementById('main') as HTMLElement;
         let myChart = echarts.init(chartDom, 'dark');
