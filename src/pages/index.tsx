@@ -26,14 +26,16 @@ export default function HomePage() {
             xAxis.push(`${item.month}.${i < 10 ? '0' + i : i}`)
         }
     })
-    const firstCycle = [151, 150, 150, 148.7, 148, 148.1, 146.9, 146.7, 146.9, 145.8];
+    const firstCycle = [151.0, 150.0, 150.0, 148.7, 148, 148.1, 146.9, 146.7, 146.9, 145.8];
     const secondCycle = [144.9, 143.8, 144.9, 146, 147.2, 148.4, 149.7, 149.4, 146.7, 148.4];
-    const thirdCycle = [147.8, 147.4, 146.3, 145.9, 144.3, 145.2, 144.6, 144.6]
+    const thirdCycle = [147.8, 147.4, 146.3, 145.9, 144.3, 145.2, 144.6, 144.6, 144.1, 144.5];
+    const fourthCycle = [145.0]
 
     let [weight, setWeight] = useState<Array<number>>([
       ...firstCycle,
       ...secondCycle,
-      ...thirdCycle
+      ...thirdCycle,
+      ...fourthCycle
     ])
     useEffect(() => {
         let chartDom = document.getElementById('main') as HTMLElement;
