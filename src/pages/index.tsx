@@ -36,7 +36,8 @@ export default function HomePage() {
       ...firstCycle,
       ...secondCycle,
       ...thirdCycle,
-      ...fourthCycle
+      ...fourthCycle,
+      ...fifthCycle
     ])
     useEffect(() => {
         let chartDom = document.getElementById('main') as HTMLElement;
