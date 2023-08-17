@@ -30,7 +30,7 @@ export default function HomePage() {
     const secondCycle = [144.9, 143.8, 144.9, 146, 147.2, 148.4, 149.7, 149.4, 146.7, 148.4];
     const thirdCycle = [147.8, 147.4, 146.3, 145.9, 144.3, 145.2, 144.6, 144.6, 144.1, 144.5];
     const fourthCycle = [145.0, 143.8, 143.1, 143.0, 142.9, 144.5, 144.7, 144.5, 143.1, 142.7];
-    const fifthCycle = [142.6, 144.0, 143.9, 143.5, 143.2]
+    const fifthCycle = [142.6, 144.0, 143.9, 143.5, 143.2, 143.2, 143.0, 143.4]
 
     let [weight, setWeight] = useState<Array<number>>([
       ...firstCycle,
