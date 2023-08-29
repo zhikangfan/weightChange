@@ -19,6 +19,9 @@ export default function HomePage() {
     },{
         month: 9,
         day: 30
+    }, {
+      month: 10,
+      day: 31
     }]
     let xAxis: Array<string> = []
     d.forEach((item) => {
@@ -31,7 +34,7 @@ export default function HomePage() {
     const thirdCycle = [147.8, 147.4, 146.3, 145.9, 144.3, 145.2, 144.6, 144.6, 144.1, 144.5];
     const fourthCycle = [145.0, 143.8, 143.1, 143.0, 142.9, 144.5, 144.7, 144.5, 143.1, 142.7];
     const fifthCycle = [142.6, 144.0, 143.9, 143.5, 143.2, 143.2, 143.0, 143.4, 143.3, 143.1];
-    const sixthCycle = [143.0, 142.8, 142.1, 142.0, 141.9]
+    const sixthCycle = [143.0, 142.8, 142.1, 142.0, 141.9, 142.2, 142.0, 142.5, 143.1, 143.4]
 
     let [weight, setWeight] = useState<Array<number>>([
       ...firstCycle,
@@ -49,7 +52,7 @@ export default function HomePage() {
         option = {
             title: {
                 left: 'center',
-                text: '体重表'
+                // text: '体重表'
             },
             xAxis: {
                 name: '日期',
